@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gamestation{
+     background-color: #000000;
+}
+
+.elevents{
+  position: relative;
+  font-family: 'Aldrich';
+  font-size: 35px;
+  font-weight: 400;
+  text-align: right;
+  color: #ffffff;
+  padding-right: 70px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img{
+  width: 50px;
+  height: auto;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #000;
+  color: white;
+}
+
+.nav-links{
+  list-style:none;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  gap: 2.5rem;
+  padding-left: 100px;
+  padding-bottom: 5px;
+}
+
+.nav-links a {
+  font-family: 'Aleo';
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF9900;
+  transform: scale(1.1);
+}
+
+.button-login{
+   margin-left: auto;
+   display: flex;
+   gap: 10px;
+}
+
+.btn-cinza,
+.btn-laranja{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 35px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 999px;
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+  font-family: 'aleo', sans-serif;
+}
+
+.btn-cinza{
+  background-color: #919191;
+  color: white;
+}
+
+.btn-laranja{
+  background-color: #FF9900;
+  color: white;
+}
