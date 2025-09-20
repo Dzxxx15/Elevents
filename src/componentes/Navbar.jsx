@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">
+          <Link to="/home">
             <img src="img/logo.jpg"/>
           </Link>
         </div>
@@ -32,13 +32,11 @@ const Navbar = () => {
           <li>
             <Link to="/contato">Contato</Link>
           </li>
-          <li>
-            <Link to="/Entrar">Entrar</Link>
-          </li>
-          <li>
-            <Link to="/criar-conta">Criar Conta</Link>
-          </li>
         </ul>
+        <div className="button-login">
+          <Link to="/Entrar" className="btn-cinza">Entrar</Link>
+          <Link to="/criarconta" className="btn-laranja">Criar Conta</Link>
+        </div>
 
         <div className="hamburger" onClick={toggleMenu}>
           <div className="line"></div>
