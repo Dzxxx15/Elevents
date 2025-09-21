@@ -13,7 +13,7 @@ import CriarConta from './views/CriarConta';
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Inclui a barra de navegação */}
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/organizador" element={<Organizador />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/criar-conta" element={<CriarConta />} />
+        <Route path="/criarconta" element={<CriarConta />} />
         <Route path="/participante" element={<Participante />} />
       </Routes>
     </Router>

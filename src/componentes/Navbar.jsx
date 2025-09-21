@@ -33,8 +33,8 @@ const Navbar = () => {
             <Link to="/contato">Contato</Link>
           </li>
         </ul>
-        <div className="button-login">
-          <Link to="/Entrar" className="btn-cinza">Entrar</Link>
+        <div className="button-login ">
+          <Link to="/login" className="btn-cinza">Entrar</Link>
           <Link to="/criarconta" className="btn-laranja">Criar Conta</Link>
         </div>
 

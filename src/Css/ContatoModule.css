@@ -1,0 +1,135 @@
+.background-decor {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bolas-inferior {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bolas-inferior .bola {
+    position: absolute;
+    background-color: #ff9800;
+    border-radius: 50%;
+}
+
+.bolas-inferior .bola:first-child {
+    width: 400px;
+    height: 400px;
+    left: -120px;     
+    bottom: -120px;
+}
+
+.bolas-inferior .bola:last-child {
+    width: 280px;
+    height: 280px;
+    left: 160px;
+    bottom: -100px;
+}
+
+.bolas-superior {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bolas-superior .bola {
+    position: absolute;
+    background-color: #ff9800;
+    border-radius: 50%;
+}
+
+.bolas-superior .bola:first-child {
+    width: 400px;
+    height: 400px;
+    top: -120px;
+    right: -120px;
+}
+
+.bolas-superior .bola:last-child {
+    width: 280px;
+    height: 280px;
+    top: -100px;
+    right: 160px;
+}
+
+.section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: 'Aleo', serif;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.section h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.coluna {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #4a4a4a;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: serif;
+    min-height: 50px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 190px;
+}
+
+button[type="submit"] {
+    background-color: #ff9800;
+    font-family:'aleo';
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e68a00;
+}
