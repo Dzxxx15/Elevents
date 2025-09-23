@@ -1,0 +1,125 @@
+/* Container das duas cartas */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+/* Estilo base do card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Header colorido do card */
+.card-header {
+  height: 120px; /* maior faixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.card-header.orange {
+  background: #ff9800;
+}
+
+.card-header.blue {
+  background: #444;
+}
+
+/* Ícone dentro da faixa */
+.icon {
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: #555;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 8px;
+}
+
+/* Título dentro da faixa */
+.card-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* texto branco dentro da faixa colorida */
+  margin: 0;
+}
+
+/* Lista dentro do card */
+.card-body {
+  list-style: disc;
+  text-align: left;
+  padding: 0 40px;
+  flex: 1; /* ocupa espaço central */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-body li {
+  line-height: 1.6;
+}
+
+/* Botões no rodapé do card */
+.btn-orange,
+.btn-blue {
+  display: inline-block;
+  align-self: center;
+  margin: 20px 0 30px;
+  padding: 14px 45px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn-orange {
+  background: #ff9800;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background: #e68900;
+}
+
+.btn-blue {
+  background: #444;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background: #222;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
