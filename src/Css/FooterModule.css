@@ -1,23 +1,84 @@
-footer {
-    background-color: #222; /* Cor escura para contraste */
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
-    font-family: 'Aleo', serif;
+/* Container do footer */
+.footer {
+  background: #000;
+  color: #aaa;
+  padding: 20px 10px 10px; /* menor altura */
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Ícones sociais */
+.social-icons {
+  margin-bottom: 10px; /* menor espaçamento */
+}
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 8px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background: #eee;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0; /* antes era maior */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* menor espaçamento */
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #111;
+  padding-top: 8px;
+  font-size: 13px;
+  color: #666;
+}
+.footer-bottom span {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .social-icons a {
+    width: 36px;
+    height: 36px;
     font-size: 16px;
-    margin-top: 100px;
-  
-    /* Borda superior arredondada para combinar com os cards */
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  
-    /* Sombra suave */
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    margin: 0 6px;
   }
-  
-  footer p {
-    margin: 0;
-    font-size: 18px;
-    color: #ccc;
+  .footer-links {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
   }
-  
+}
