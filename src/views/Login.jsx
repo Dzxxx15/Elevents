@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Css/LoginModule.css';
+import Footer from "../componentes/Footer";
 
 function Login() {
   const [usuario, setUsuario] = useState("");
@@ -51,9 +52,7 @@ function Login() {
         </div>
       </div>
 
-      <footer>
-        <p>&copy; Elevents</p>
-      </footer>
+      <Footer />
     </>
   );
 }

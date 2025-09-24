@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../componentes/Footer";
 
 function Organizador() {
   return (
@@ -24,7 +25,7 @@ function Organizador() {
             <div className="form-group">
               <label>
                 <strong>Nome da Empresa*</strong>
-                <input type="text" placeholder="Nome da sua empresa" required />   
+                <input type="text" placeholder="Nome da sua empresa" required />
               </label>
             </div>
 
@@ -95,9 +96,7 @@ function Organizador() {
           </div>
         </div>
 
-        <footer>
-          <p>&copy; Elevents</p>
-        </footer>
+        <Footer />
       </div>
     </>
   );

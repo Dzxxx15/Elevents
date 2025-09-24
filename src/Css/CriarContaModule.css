@@ -1,13 +1,14 @@
-/* Container das duas cartas */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap');
+
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin-top: 80px;
+  gap: 7rem;
+  margin-top: 150px;
   flex-wrap: wrap;
 }
 
-/* Estilo base do card */
 .card {
   background: #fff;
   border-radius: 20px;
@@ -25,14 +26,14 @@
   transform: translateY(-8px);
 }
 
-/* Header colorido do card */
 .card-header {
-  height: 120px; /* maior faixa */
+  height: 120px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 3.5rem;
   position: relative;
-  flex-direction: column;
+  padding-left: 15px;
+  font-family: 'Alexandria', sans-serif;
 }
 
 .card-header.orange {
@@ -43,35 +44,35 @@
   background: #444;
 }
 
-/* Ícone dentro da faixa */
-.icon {
-  background: #fff;
+/* ✅ NOVO estilo do ícone */
+.icon-wrapper {
+  background-color: white;
   border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 80px;
   height: 80px;
-  font-size: 30px;
-  color: #555;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  margin-bottom: 8px;
 }
 
-/* Título dentro da faixa */
+.user-icon {
+  width: 75px;
+  height: auto;
+}
+
 .card-header h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff; /* texto branco dentro da faixa colorida */
+  font-size: 28px;
+  color: #fff;
   margin: 0;
 }
 
-/* Lista dentro do card */
 .card-body {
   list-style: disc;
   text-align: left;
   padding: 0 40px;
-  flex: 1; /* ocupa espaço central */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,10 +82,11 @@
 }
 
 .card-body li {
-  line-height: 1.6;
+  line-height: 2.0;
+  font-size: 24px;
+  font-family: 'Aleo', serif;
 }
 
-/* Botões no rodapé do card */
 .btn-orange,
 .btn-blue {
   display: inline-block;
@@ -96,6 +98,7 @@
   font-weight: bold;
   font-size: 16px;
   transition: background 0.3s ease;
+  font-family: 'Aleo', serif;
 }
 
 .btn-orange {
@@ -114,12 +117,4 @@
 
 .btn-blue:hover {
   background: #222;
-}
-
-/* Footer */
-footer {
-  margin-top: 80px;
-  text-align: center;
-  color: #666;
-  font-size: 16px;
 }

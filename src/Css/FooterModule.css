@@ -1,0 +1,23 @@
+footer {
+    background-color: #222; /* Cor escura para contraste */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    margin-top: 100px;
+  
+    /* Borda superior arredondada para combinar com os cards */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  
+    /* Sombra suave */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 18px;
+    color: #ccc;
+  }
+  
