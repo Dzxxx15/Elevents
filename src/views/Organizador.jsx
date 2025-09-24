@@ -95,8 +95,6 @@ function Organizador() {
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );

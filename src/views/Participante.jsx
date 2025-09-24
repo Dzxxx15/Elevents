@@ -46,8 +46,6 @@ function Participante() {
             </div>
           </form>
         </div>
-
-        <Footer />
       </>
   )
 }
