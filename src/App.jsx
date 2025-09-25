@@ -9,6 +9,7 @@ import Organizador from './views/Organizador';
 import Participante from './views/Participante';
 import Login from './views/Login';
 import CriarConta from './views/CriarConta';
+import Assinatura from './views-organizador/Assinatura';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/criarconta" element={<CriarConta />} />
         <Route path="/participante" element={<Participante />} />
+        <Route path="/Assinatura" element={<Assinatura/>} />
       </Routes>
     </Router>
   );
