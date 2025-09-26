@@ -13,7 +13,7 @@
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  width: 420px;
+  width: 520px;
   height: 520px;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   height: 120px;
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 5rem;
   position: relative;
   padding-left: 15px;
   font-family: 'Alexandria', sans-serif;
@@ -95,10 +95,12 @@
   padding: 14px 45px;
   border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: background 0.3s ease;
   font-family: 'Aleo', serif;
+  min-width: 400px; 
+  min-height: 20px;
+  text-align: center;
 }
 
 .btn-orange {

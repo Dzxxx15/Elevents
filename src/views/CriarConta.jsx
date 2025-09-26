@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../Css/CriarContaModule.css';
-import Footer from "../componentes/Footer";
 
 // ✅ Importar imagem do ícone
 import account from '../assets/user.png'; // verifique se está realmente em: /src/assets/account.png

@@ -1,0 +1,60 @@
+.introdução {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+  padding: 60px 8%;
+  background: #fff;
+  flex-wrap: wrap; /* permite quebrar em telas pequenas */
+  gap: 40px; /* espaço entre texto e imagem */
+}
+
+.introdução-texto {
+  flex: 1 1 500px; /* ocupa espaço e permite encolher */
+  max-width: 600px;
+}
+
+.introdução-texto .subtitulo {
+  font-size: 16px;
+  color: #e0b800;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.introdução-texto h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.introdução-texto .descricao {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.introdução-imagem {
+  flex: 1 1 400px; /* ocupa espaço e permite encolher */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.introdução-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* opcional, só pra estilo */
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .introdução {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introdução-imagem {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
