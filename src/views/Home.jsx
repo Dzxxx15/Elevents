@@ -21,12 +21,10 @@ function Home() {
             gerenciar negócios de maneira inteligente.
           </p>
         </div>
+        <div className="introdução-imagem">
+          <img src={src} alt="Imagem de introdução" />
+        </div>
       </section>
-
-      <div className="introdução-imagem">
-        <img src={src} alt="Imagem de introdução" />
-      </div>
-
       <Footer />
     </>
   )
