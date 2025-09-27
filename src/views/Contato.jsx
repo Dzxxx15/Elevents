@@ -52,7 +52,6 @@ function Contato() {
             <button type="submit">Enviar</button>
           </form>
         </section>
-        <Footer />
       </div>
     </>
   )
