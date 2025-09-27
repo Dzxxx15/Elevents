@@ -31,6 +31,7 @@ import Relatorios from './views-organizador/Relatorios';
 //Paginas config
 import ConfigLayout from './layouts/ConfigLayout';
 import Empresa from './views-organizador/Empresa';
+import Funcionamento from './views-organizador/Funcionamento';
 import Pagamento from './views-organizador/Pagamento';
 import Perfil from './views-organizador/Perfil';
 import Senha from './views-organizador/Senha';
@@ -54,7 +55,6 @@ function App() {
         <Route path="/homeorg" element={<OrgLayout><HomeOrg /></OrgLayout>} />
         <Route path="/assinatura" element={<OrgLayout><Assinatura /></OrgLayout>} />
         <Route path="/equipe" element={<OrgLayout><Equipe /></OrgLayout>} />
-        <Route path="/configuracao" element={<OrgLayout><Configuracao /></OrgLayout>} />
         <Route path="/eventosorg" element={<OrgLayout><EventosOrg /></OrgLayout>} />
         <Route path="/galeria" element={<OrgLayout><Galeria /></OrgLayout>} />
         <Route path="/localizacao" element={<OrgLayout><Localizacao /></OrgLayout>} />
@@ -63,6 +63,7 @@ function App() {
 
         {/* PÁGINAS DE CONFIGURAÇÃO */}
         <Route path="/configuracao" element={<ConfigLayout><Configuracao /></ConfigLayout>} />
+         <Route path="/funcionamento" element={<ConfigLayout><Funcionamento /></ConfigLayout>} />
         <Route path="/empresa" element={<ConfigLayout><Empresa /></ConfigLayout>} />
         <Route path="/pagamento" element={<ConfigLayout><Pagamento /></ConfigLayout>} />
         <Route path="/perfil" element={<ConfigLayout><Perfil /></ConfigLayout>} />

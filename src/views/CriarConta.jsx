@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../Css/CriarContaModule.css';
 
 // ✅ Importar imagem do ícone
-import account from '../assets/user.png'; // verifique se está realmente em: /src/assets/account.png
+import account from '../assets/user.png';
 
 function CriarConta() {
   return (

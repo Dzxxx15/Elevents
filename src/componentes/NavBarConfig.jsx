@@ -8,7 +8,7 @@ const NavBarConfig = () => {
         <ul>
           <li>
             <NavLink to="/HomeOrg" className={({ isActive }) => (isActive ? "active" : "")}>
-              Dashboard
+              Voltar
             </NavLink>
           </li>
           <li>
