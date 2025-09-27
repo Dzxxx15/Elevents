@@ -16,22 +16,11 @@
 }
 
 .form-box input,
-.form-box textarea {
+.form-box select {
   padding: 10px 12px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 14px;
-}
-
-.form-box textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.form-box input[type="file"] {
-  padding: 6px;
-  border: none;
-  background: #f9fafb;
 }
 
 .form-box button {

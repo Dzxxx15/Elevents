@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../CssOrg/EquipeModule.css';
 
 export default function Equipe() {
     return (

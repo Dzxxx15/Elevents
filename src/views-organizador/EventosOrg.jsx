@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../Css/EventoModule.css';
 
 export default function Eventos() {
     return (

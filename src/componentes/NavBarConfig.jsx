@@ -1,20 +1,45 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
-export default function NavBarConfig() {
-    return (
-        <div>
-            <aside className="sidebar">
-                <div className="logo">Meu Painel</div>
-                <nav>
-                    <ul>
-                        <li><Link to="/">Dashboard</Link></li>
-                        <li><Link to="/empresa" className="active">Empresa</Link></li>
-                        <li><Link to="/funcionamento">Funcionamento</Link></li>
-                        <li><Link to="/pagamento">Pagamento</Link></li>
-                        <li><Link to="/perfil">Gerenciar Perfil</Link></li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
-    )
-}
+const NavBarConfig = () => {
+  return (
+    <aside className="sidebar">
+      <div className="logo">Meu Painel</div>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/HomeOrg" className={({ isActive }) => (isActive ? "active" : "")}>
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Empresa" className={({ isActive }) => (isActive ? "active" : "")}>
+              Empresa
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Funcionamento" className={({ isActive }) => (isActive ? "active" : "")}>
+              Funcionamento
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Pagamento" className={({ isActive }) => (isActive ? "active" : "")}>
+              Pagamento
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Perfil" className={({ isActive }) => (isActive ? "active" : "")}>
+              Gerenciar Perfil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Senha" className={({ isActive }) => (isActive ? "active" : "")}>
+              Alterar Senha
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  );
+};
+
+export default NavBarConfig;

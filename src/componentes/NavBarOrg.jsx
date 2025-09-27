@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function NavBarOrg() {
+const NavBarOrg = () => {
   return (
     <aside className="sidebar">
       <div className="logo">ElEvents</div>
@@ -55,4 +55,6 @@ export default function NavBarOrg() {
       </nav>
     </aside>
   );
-}
+};
+
+export default NavBarOrg;

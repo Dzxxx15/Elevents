@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../CssOrg/AssinaturaModule.css';
 
 export default function Assinatura() {
     return (

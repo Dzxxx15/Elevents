@@ -1,0 +1,42 @@
+.report-form {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 860px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.report-form label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+.report-form input[type="text"],
+.report-form input[type="date"],
+.report-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.table td .action-btn {
+  margin-right: 6px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.action-download {
+  background: #10b981;
+  color: #fff;
+  border: none;
+}
+
+.action-delete {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+}

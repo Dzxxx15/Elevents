@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../Css/GaleriaModule.css';
 
 export default function Galeria() {
     return (

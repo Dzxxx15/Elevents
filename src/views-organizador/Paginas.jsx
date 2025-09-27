@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../CssOrg/PaginasModule.css';
 
 export default function Pagina() {
     return (

@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../CssOrg/HomeOrgModule.css';
 
 export default function HomeOrg() {
     return (

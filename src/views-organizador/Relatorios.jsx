@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NavBarOrg from '../componentes/NavBarOrg';
+import '../CssOrg/RelatoriosModule.css';
 
 const STORAGE_KEY = 'reports_v1';
 

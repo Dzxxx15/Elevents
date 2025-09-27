@@ -1,0 +1,177 @@
+/* ===== GLOBAL.CSS - substitua todo o arquivo por este ===== */
+
+/* Reset e tipografia */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #111827;
+  background: #f3f4f6; /* fundo claro */
+  display: flex;
+  min-height: 100vh;
+}
+
+/* -------------------------
+   SIDEBAR (layout do wireframe)
+   ------------------------- */
+.sidebar {
+  width: 220px;                    /* largura do wireframe */
+  min-width: 220px;
+  background: #1f2937;             /* tom escuro */
+  color: #ffffff;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+/* logo / topo da sidebar */
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #f97316;                   /* laranja destaque */
+  font-size: 18px;
+  padding: 6px 8px;
+}
+
+/* menu */
+.sidebar nav { margin-top: 6px; }
+.sidebar nav ul { list-style: none; }
+.sidebar nav ul li { margin-bottom: 6px; }
+
+/* link do menu - alinhamento, padding e hover */
+.sidebar nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #e6eef6;                   /* texto leve */
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background .15s, color .15s;
+  font-size: 14px;
+}
+
+/* hover */
+.sidebar nav ul li a:hover {
+  background: #374151;              /* hover mais claro que o fundo */
+  color: #fff;
+}
+
+/* item ativo - destaque laranja como no wireframe */
+.sidebar nav ul li a.active,
+.sidebar nav ul li a.active:hover {
+  background: #f97316;              /* laranja */
+  color: #fff;
+}
+
+/* se quiser ícones à esquerda, use .icon dentro do a (opcional) */
+.sidebar nav ul li a .icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------
+   ÁREA DE CONTEÚDO
+   ------------------------- */
+.content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: transparent; /* corpo com o fundo geral do body */
+}
+
+/* Top bar (botão "Ver Página") - posicionado à esquerda como no wireframe */
+.top-bar {
+  display: flex;
+  justify-content: flex-start; /* esquerda */
+  align-items: center;
+  gap: 10px;
+}
+
+/* botão "Ver Página" - reutilizável */
+.btn-view {
+  display: inline-block;
+  background: #f97316;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background .15s, transform .06s;
+}
+.btn-view:hover { background: #ea6f10; transform: translateY(-1px); }
+
+/* =========================
+   Componentes comuns usados nas páginas
+   ========================= */
+
+/* cartões / boxes brancos */
+.card, .stat-card, .form-box, .chart-section {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+  padding: 18px;
+}
+
+/* botões padrão */
+button, .btn {
+  background: #111827;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button.secondary, .btn.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+/* tabelas simples */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.table th, .table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: left;
+}
+.table th {
+  background: #f8fafc;
+  color: #374151;
+}
+
+/* formulários (inputs) */
+input[type="text"], input[type="email"], input[type="file"], select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e6eef6;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+}
+
+/* helpers */
+.row { display:flex; gap:12px; }
+.col { flex:1; }
+
+/* responsividade simples */
+@media (max-width: 900px) {
+  .sidebar { width: 64px; min-width: 64px; padding: 12px; }
+  .sidebar .logo { display: none; }
+  .sidebar nav ul li a { padding: 10px 8px; }
+  .content { padding: 12px; }
+}

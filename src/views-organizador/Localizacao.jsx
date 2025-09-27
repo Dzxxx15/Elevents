@@ -1,4 +1,5 @@
 import NavBarOrg from "../componentes/NavBarOrg";
+import '../CssOrg/LocalizacaoModule.css';
 
 export default function Localizacoes() {
     return (
