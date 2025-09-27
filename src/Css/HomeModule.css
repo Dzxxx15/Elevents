@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+
 .introdução {
   display: flex;
   align-items: center; /* centraliza verticalmente */
@@ -14,24 +16,26 @@
 }
 
 .introdução-texto .subtitulo {
-  font-size: 16px;
-  color: #e0b800;
+  font-size: 20px;
+  color: #ffE100;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Aleo';
 }
 
 .introdução-texto h1 {
-  font-size: 56px;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 70px;
+  font-weight: 100;
   color: #000;
   margin-bottom: 20px;
+  font-family: 'Aleo';
 }
 
 .introdução-texto .descricao {
   font-size: 16px;
   color: #777;
   margin-bottom: 30px;
+  font-family: 'Aleo';
 }
 
 .introdução-imagem {
