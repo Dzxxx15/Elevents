@@ -1,0 +1,63 @@
+/* Container do usuário */
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botão principal */
+.user-menu button {
+  background-color: #FF9900; /* cor laranja */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Aleo', sans-serif;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.user-menu button:hover {
+  background-color: #e68a00;
+  transform: scale(1.05);
+}
+
+/* Dropdown do usuário */
+.user-dropdown {
+  display: none; /* escondido por padrão */
+  position: absolute;
+  top: 110%; /* abaixo do botão */
+  right: 0;
+  background-color: #111;
+  border-radius: 8px;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* Mostrar dropdown quando ativo */
+.user-dropdown.show {
+  display: flex;
+}
+
+/* Links e botões dentro do dropdown */
+.user-dropdown a,
+.user-dropdown button {
+  color: white;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Aleo', sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.user-dropdown a:hover,
+.user-dropdown button:hover {
+  background-color: #222;
+  color: #FF9900;
+}

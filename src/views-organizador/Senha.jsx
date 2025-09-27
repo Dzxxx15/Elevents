@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import NavBarConfig from "../componentes/NavBarConfig";
 import '../CssOrg/SenhaModule.css';
 
+
 export default function Senha() {
     return (
         <div>
-            <NavBarConfig />
             <main className="content">
                 <div className="top-bar">
                     <Link to="/pagina" className="btn-view">Ver Página</Link>

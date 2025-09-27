@@ -1,0 +1,18 @@
+/* Container geral: sidebar + conteúdo */
+.org-layout {
+  display: flex;
+  min-height: 100vh; /* ocupa toda a tela */
+  background-color: #f3f4f6;
+}
+
+/* Área principal de conteúdo */
+.org-content {
+  flex: 1;           /* ocupa todo o espaço restante */
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+/* Optional: scroll automático se o conteúdo for longo */
+.org-content {
+  overflow-y: auto;
+}

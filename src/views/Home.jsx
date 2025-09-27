@@ -2,6 +2,7 @@ import Footer from "../componentes/Footer"
 import ImgHome from "../assets/ImgHome.png"
 import '../Css/HomeModule.css';
 
+
 function Home() {
   const src = ImgHome
 

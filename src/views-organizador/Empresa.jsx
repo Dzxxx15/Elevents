@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import NavBarConfig from "../componentes/NavBarConfig";
 import '../CssOrg/EmpresaModule.css';
 
-export default function ConfigEmpresa() {
+export default function Empresa() {
     return (
         <div>
-            <NavBarConfig />
             <main className="content">
                 <div className="top-bar">
                     <Link to="/pagina" className="btn-view">Ver Página</Link>

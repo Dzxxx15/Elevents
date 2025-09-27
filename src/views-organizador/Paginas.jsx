@@ -1,10 +1,10 @@
 import NavBarOrg from "../componentes/NavBarOrg";
 import '../CssOrg/PaginasModule.css';
+import { Link } from 'react-router-dom';
 
 export default function Pagina() {
     return (
         <div>
-            <NavBarOrg />
             <main className="content">
                 <h2>Página Personalizada</h2>
                 <form className="form-box">

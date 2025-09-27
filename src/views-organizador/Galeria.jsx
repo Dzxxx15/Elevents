@@ -1,10 +1,10 @@
 import NavBarOrg from "../componentes/NavBarOrg";
-import '../Css/GaleriaModule.css';
+import '../CssOrg/GaleriaModule.css';
+import { Link } from 'react-router-dom';
 
 export default function Galeria() {
     return (
         <div>
-            <NavBarOrg />
             <main className="content">
                 <div className="top-bar">
                     <Link to="/pagina" className="btn-view">Ver Página</Link>

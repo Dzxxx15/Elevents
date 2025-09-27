@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavBarOrg from '../componentes/NavBarOrg';
 import '../CssOrg/RelatoriosModule.css';
+import { Link } from 'react-router-dom';
 
 const STORAGE_KEY = 'reports_v1';
 
@@ -89,7 +90,6 @@ function Relatorios() {
 
     return (
         <div>
-            <NavBarOrg />
             <h2>Adicionar Relatório</h2>
             <div>
                 <input

@@ -1,10 +1,10 @@
 import NavBarOrg from "../componentes/NavBarOrg";
 import '../CssOrg/EquipeModule.css';
+import { Link } from 'react-router-dom';
 
 export default function Equipe() {
     return (
         <div>
-            <NavBarOrg/>
             <div className="app">
                 <main className="content">
                     <h2>Equipe</h2>

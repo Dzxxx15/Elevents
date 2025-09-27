@@ -1,10 +1,10 @@
 import NavBarOrg from "../componentes/NavBarOrg";
 import '../Css/EventoModule.css';
+import { Link } from 'react-router-dom';
 
-export default function Eventos() {
+export default function EventosOrg() {
     return (
         <div>
-            <NavBarOrg />
             <main className="content">
                 <h2>Eventos</h2>
                 <div className="event-list">

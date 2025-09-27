@@ -1,11 +1,11 @@
-import NavBarConfig from "../componentes/NavBarConfig"
-import ConfigEmpresa from "./Empresa"
+import React from "react";
+import ConfigLayout from "../layouts/ConfigLayout";
+import ConfigEmpresa from "./Empresa";
 
-export default function Configuracao(){
-    return(
-        <div>
-            <NavBarConfig/>
-            <ConfigEmpresa/>
-        </div>
-    )
+export default function Configuracao() {
+  return (
+    <ConfigLayout>
+      <ConfigEmpresa/>
+    </ConfigLayout>
+  );
 }

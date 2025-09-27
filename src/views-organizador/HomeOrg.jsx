@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";   // 👈 faltava isso
 import NavBarOrg from "../componentes/NavBarOrg";
 import '../CssOrg/HomeOrgModule.css';
 
 export default function HomeOrg() {
     return (
         <div>
-            <NavBarOrg />
             <main className="content">
                 <div className="top-bar">
                     <Link to="/pagina" className="btn-view">Ver Página</Link>

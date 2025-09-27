@@ -1,10 +1,10 @@
 import NavBarOrg from "../componentes/NavBarOrg";
 import '../CssOrg/LocalizacaoModule.css';
+import { Link } from 'react-router-dom';
 
 export default function Localizacoes() {
     return (
         <div>
-            <NavBarOrg />
             <main className="content">
                 <h2>Localizações</h2>
                 <div className="location-list">

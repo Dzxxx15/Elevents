@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import '../CssOrg/NavBarOrgModule.css';
 
 const NavBarOrg = () => {
   return (
@@ -7,7 +8,7 @@ const NavBarOrg = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/index" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink to="/HomeOrg" className={({ isActive }) => (isActive ? "active" : "")}>
               Painel
             </NavLink>
           </li>
@@ -17,7 +18,7 @@ const NavBarOrg = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/eventos" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink to="/eventosorg" className={({ isActive }) => (isActive ? "active" : "")}>
               Eventos
             </NavLink>
           </li>
@@ -27,7 +28,7 @@ const NavBarOrg = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/localizacoes" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink to="/localizacao" className={({ isActive }) => (isActive ? "active" : "")}>
               Localizações
             </NavLink>
           </li>
@@ -42,14 +43,19 @@ const NavBarOrg = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/pagina" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink to="/paginas" className={({ isActive }) => (isActive ? "active" : "")}>
               Página
             </NavLink>
           </li>
           <li>
-            <NavLink to="/configuracoes/empresa" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink to="/configuracao" className={({ isActive }) => (isActive ? "active" : "")}>
               Configurações
             </NavLink>
+            <li>
+            <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>
+              Voltar
+            </NavLink>
+          </li>
           </li>
         </ul>
       </nav>

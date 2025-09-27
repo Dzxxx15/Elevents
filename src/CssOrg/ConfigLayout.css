@@ -1,0 +1,14 @@
+/* Layout geral */
+.config-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+/* Área de conteúdo principal */
+.config-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}

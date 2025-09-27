@@ -5,7 +5,6 @@ import '../CssOrg/PerfilModule.css';
 export default function Perfil() {
     return (
         <div>
-            <NavBarConfig />
             <main className="content">
                 <div className="top-bar">
                     <Link to="/pagina" className="btn-view">Ver Página</Link>
