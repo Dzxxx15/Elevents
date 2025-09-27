@@ -1,51 +1,54 @@
-/* Container do usuário */
-.user-menu {
+/* Botão principal: mesmo fundo da navbar + borda branca fina */
+.user-menu,
+.button-login .user-menu {
   position: relative;
   display: inline-block;
 }
 
-/* Botão principal */
-.user-menu button {
-  background-color: #FF9900; /* cor laranja */
-  color: white;
-  border: none;
+.user-menu > button {
+  background-color: #000;                           /* cor do fundo igual à navbar */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);       /* borda branca fina (translúcida) */
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   font-family: 'Aleo', sans-serif;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.18s, transform 0.12s, border-color 0.18s;
 }
 
-.user-menu button:hover {
-  background-color: #e68a00;
-  transform: scale(1.05);
+/* Hover: apenas escurece levemente — sem laranja */
+.user-menu > button:hover {
+  background-color: #111;                           /* preto um pouco mais claro */
+  border-color: rgba(255, 255, 255, 0.55);         /* borda branca mais visível no hover */
+  transform: scale(1.03);
 }
 
-/* Dropdown do usuário */
+/* Dropdown: mantem mesmo estilo (fundo preto) e borda igual ao botão */
 .user-dropdown {
-  display: none; /* escondido por padrão */
+  display: none;
   position: absolute;
-  top: 110%; /* abaixo do botão */
+  top: 110%;
   right: 0;
-  background-color: #111;
+  background-color: #000;                           /* mesmo fundo preto */
+  border: 1px solid rgba(255, 255, 255, 0.3);       /* mesma borda branca fina */
   border-radius: 8px;
   min-width: 150px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   flex-direction: column;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
-/* Mostrar dropdown quando ativo */
+/* Mostrar dropdown */
 .user-dropdown.show {
   display: flex;
 }
 
-/* Links e botões dentro do dropdown */
+/* Itens do dropdown (mantém seu estilo) */
 .user-dropdown a,
 .user-dropdown button {
-  color: white;
+  color: #fff;
   background: none;
   border: none;
   text-align: left;
@@ -53,11 +56,11 @@
   cursor: pointer;
   font-size: 14px;
   font-family: 'Aleo', sans-serif;
-  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
 }
 
 .user-dropdown a:hover,
 .user-dropdown button:hover {
   background-color: #222;
-  color: #FF9900;
 }

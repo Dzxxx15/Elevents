@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BottonPainel from './BottonPainel';
 import '../Css/NavbarModule.css';
+import Logo from "../assets/Logo.png"
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
-
   const toggleMenu = () => setIsMobile(!isMobile);
+  const src = Logo
+  
 
   return (
     <header>
@@ -17,7 +19,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <Link to="/home">
-            <img src="img/assets/logo.png" alt="logo" />
+            <img src={src} />
           </Link>
         </div>
 

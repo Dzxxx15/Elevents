@@ -22,7 +22,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Elevents Copyright ©2025</p>
+        <p>Elevents ©2025</p>
       </div>
     </footer>
   );

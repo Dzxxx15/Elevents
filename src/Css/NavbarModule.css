@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
-.gamestation{
-     background-color: #000000;
+.gamestation {
+  background-color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borda fina branca em volta */
+  border-radius: 4px; /* opcional: cantos levemente arredondados */
 }
+
+
 
 .elevents{
   position: relative;
@@ -28,9 +32,11 @@
   gap: 1rem;
 }
 
-.logo img{
+.logo img {
   width: 50px;
   height: auto;
+  transform: scale(1.5); /* aumenta 50% sem afetar a navbar */
+  transform-origin: center; /* centraliza o ponto de escala */
 }
 
 .navbar{
