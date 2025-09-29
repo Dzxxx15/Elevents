@@ -9,7 +9,7 @@ function CriarConta() {
   return (
     <>
       <section className="card-container">
-        <div className="card">
+        <div className="card1">
           <div className="card-header orange">
             <div className="icon-wrapper">
               <img src={account} alt="User Icon" className="user-icon" />
@@ -28,7 +28,7 @@ function CriarConta() {
           </Link>
         </div>
 
-        <div className="card">
+        <div className="card2">
           <div className="card-header blue">
             <div className="icon-wrapper">
               <img src={account} alt="User Icon" className="user-icon" />

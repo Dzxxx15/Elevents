@@ -63,7 +63,7 @@ function App() {
 
         {/* PÁGINAS DE CONFIGURAÇÃO */}
         <Route path="/configuracao" element={<ConfigLayout><Configuracao /></ConfigLayout>} />
-         <Route path="/funcionamento" element={<ConfigLayout><Funcionamento /></ConfigLayout>} />
+        <Route path="/funcionamento" element={<ConfigLayout><Funcionamento /></ConfigLayout>} />
         <Route path="/empresa" element={<ConfigLayout><Empresa /></ConfigLayout>} />
         <Route path="/pagamento" element={<ConfigLayout><Pagamento /></ConfigLayout>} />
         <Route path="/perfil" element={<ConfigLayout><Perfil /></ConfigLayout>} />

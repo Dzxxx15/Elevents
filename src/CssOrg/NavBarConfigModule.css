@@ -1,15 +1,6 @@
 /* ===== GLOBAL.CSS - substitua todo o arquivo por este ===== */
 
-/* Reset e tipografia */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; }
-body {
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #111827;
-  background: #f3f4f6; /* fundo claro */
-  display: flex;
-  min-height: 100vh;
-}
+/* Reset e tipografia *}
 
 /* -------------------------
    SIDEBAR (layout do wireframe)
@@ -24,6 +15,12 @@ body {
   flex-direction: column;
   gap: 12px;
   align-items: stretch;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #111827;
+  background: #f3f4f6; /* fundo claro */
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
 }
 
 /* logo / topo da sidebar */

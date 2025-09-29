@@ -97,7 +97,17 @@
   color: white;
 }
 
+.btn-cinza:hover {
+  background-color: #777777;
+}
+
 .btn-laranja{
   background-color: #FF9900;
   color: white;
 }
+
+.btn-laranja:hover {
+  background: #e68900;
+}
+
+

@@ -1,14 +1,39 @@
-/* Layout geral */
-.config-layout {
-  display: flex;
-  min-height: 100vh;
-  background-color: #f3f4f6;
+.form-box h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #111827;
 }
 
-/* Área de conteúdo principal */
-.config-content {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9fafb;
-  overflow-y: auto;
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-box input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-box button {
+  margin-top: 12px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.form-box button:hover {
+  background: #ea6f10;
 }

@@ -6,9 +6,13 @@
 }
 
 .user-menu > button {
-  background-color: #000;                           /* cor do fundo igual à navbar */
+  display: flex;                 /* flex para alinhar ícones e texto */
+  align-items: center;           /* centraliza verticalmente */
+  justify-content: center;       /* mantém ícone + texto + seta alinhados */
+  gap: 10px;                     /* espaço entre o boneco, nome e seta */
+  background-color: #000;        /* cor do fundo igual à navbar */
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.6);       /* borda branca fina (translúcida) */
+  border: 1px solid rgba(255, 255, 255, 0.6);  /* borda branca fina (translúcida) */
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
@@ -17,21 +21,25 @@
   transition: background 0.18s, transform 0.12s, border-color 0.18s;
 }
 
+.user-button svg {
+  display: block;                /* garante centralização dos ícones */
+}
+
 /* Hover: apenas escurece levemente — sem laranja */
 .user-menu > button:hover {
-  background-color: #111;                           /* preto um pouco mais claro */
-  border-color: rgba(255, 255, 255, 0.55);         /* borda branca mais visível no hover */
+  background-color: #111;        /* preto um pouco mais claro */
+  border-color: rgba(255, 255, 255, 0.55); /* borda branca mais visível */
   transform: scale(1.03);
 }
 
-/* Dropdown: mantem mesmo estilo (fundo preto) e borda igual ao botão */
+/* Dropdown: mantém mesmo estilo (fundo preto) e borda igual ao botão */
 .user-dropdown {
   display: none;
   position: absolute;
   top: 110%;
   right: 0;
-  background-color: #000;                           /* mesmo fundo preto */
-  border: 1px solid rgba(255, 255, 255, 0.3);       /* mesma borda branca fina */
+  background-color: #000;        /* mesmo fundo preto */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* mesma borda branca fina */
   border-radius: 8px;
   min-width: 150px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
@@ -63,4 +71,12 @@
 .user-dropdown a:hover,
 .user-dropdown button:hover {
   background-color: #222;
+}
+
+/* Animação da seta (gira para cima quando menu abre) */
+.icon-right {
+  transition: transform 0.2s ease;
+}
+.icon-right.rotate {
+  transform: rotate(180deg);
 }
