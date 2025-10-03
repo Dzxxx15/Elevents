@@ -1,26 +1,41 @@
 import React, { useState } from "react";
-import '../Css/LoginModule.css';
-import Footer from "../componentes/Footer";
+import { Link } from 'react-router-dom';
 
-function Login() {
+import "../Css/LoginModule.css";
+import Entrar from "../assets/Entrar.png"
+import LogoEntrar from "../assets/LogoEntrar.png"
+import Logo from "../assets/Logo.png"
+
+
+const src = Entrar
+const src2 = LogoEntrar;
+const src3 = Logo;
+
+export default function Login() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // evita o reload da página
+    e.preventDefault();
     console.log("Usuário:", usuario);
     console.log("Senha:", senha);
-    // aqui você pode integrar com API ou validar
+
   };
 
   return (
     <>
       <div className="container">
-        <div className="lado-esquerdo"></div>
+        <div className="lado-esquerdo">
+          <img src={src} alt="Fundo geométrico" className="Geometricoimage" />
+        </div>
 
         <div className="lado-direito">
           <div className="login-box">
-            <img src="img/logo.png" alt="Logo" className="logo" />
+            <div className="logo-container">
+              <img src={src2} alt="Logo Elevents" className="logo-elevents" />
+              <img src={src3} alt="Logo Elefante" className="logo-elefante" />
+            </div>
+
             <p className="texto-login">
               Faça login em sua <strong>Elevents</strong> conta
             </p>
@@ -44,9 +59,8 @@ function Login() {
                 onChange={(e) => setSenha(e.target.value)}
               />
 
-
-
               <button type="submit">Entrar</button>
+              <Link to="/esqueceu-senha" className="esqueceu-senha">Perdeu a Senha?</Link>
             </form>
           </div>
         </div>
@@ -54,5 +68,3 @@ function Login() {
     </>
   );
 }
-
-export default Login;

@@ -1,79 +1,125 @@
+/* LoginModule.css */
 
 .container {
-  display: flex;
-  height: 100vh;
-}
-
-.lado-esquerdo {
-    
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Lado esquerdo com fundo geométrico */
+  .lado-esquerdo {
     flex: 1;
-  background: linear-gradient(
-    135deg,
-    #ffec8b 0%,
-    #fff000 25%,
-    #ffc800 50%,
-    #ffa500 75%,
-    #ff7600 100%
-  );
-}
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #fff;
 
-.lado-direito {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-}
-
-.login-box {
-  width: 100%;
-  max-width: 400px;
-  padding: 40px;
-}
-
-.texto-login {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-form label {
-  display: block;
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 5px;
-}
-
-form input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 25px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.esqueceu-senha {
-  color: #ff7300;
-  text-decoration: none;
-  font-size: 14px;
-  display: inline-block;
-  margin-bottom: 25px;
-}
-
-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #333;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background-color: #000;
-}
+  }
+  
+  .Geometricoimage {
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Lado direito */
+  .lado-direito {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  
+  /* Caixa de login */
+  .login-box {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .logo-elevents {
+    height: 70px;
+  }
+  
+  .logo-elefante {
+    height: 50px;
+  }
+  
+  /* Texto de login */
+  .texto-login {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 25px;
+  }
+  
+  /* Labels */
+  form label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  
+  /* Inputs */
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 4px rgba(243, 156, 18, 0.5);
+  }
+  
+  /* Botão */
+  form button {
+    width: 100%;
+    padding: 12px;
+    background: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #e67e22;
+  }
+  
+  /* Link de "esqueceu a senha" */
+  .esqueceu-senha {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #e74c3c;
+    text-decoration: none;
+  }
+  
+  .esqueceu-senha:hover {
+    text-decoration: underline;
+  }
+  

@@ -16,6 +16,7 @@ import Login from './views/Login';
 import CriarConta from './views/CriarConta';
 import Participante from './views/Participante';
 import Organizador from './views/Organizador';
+import EsqueceuSenha from './views/Esqueceu-senha';
 
 // Páginas do organizador
 import HomeOrg from './views-organizador/HomeOrg';
@@ -49,6 +50,8 @@ function App() {
         <Route path="/criarconta" element={<><Navbar /><CriarConta /></>} />
         <Route path="/participante" element={<><Navbar /><Participante /></>} />
          <Route path="/organizador" element={<><Navbar /><Organizador /></>} />
+         <Route path="/esqueceu-senha" element={<><Navbar/><EsqueceuSenha /></>} />
+
 
 
         {/*PÁGINAS ORGANIZADOR*/}
