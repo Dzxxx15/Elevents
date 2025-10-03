@@ -51,11 +51,11 @@
   }
   
   .logo-elevents {
-    height: 70px;
+    height: 100px;
   }
   
   .logo-elefante {
-    height: 50px;
+    height: 100px;
   }
   
   /* Texto de login */
@@ -69,7 +69,7 @@
   form label {
     display: block;
     text-align: left;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
     margin-bottom: 6px;
@@ -115,7 +115,7 @@
     display: block;
     margin-top: 12px;
     font-size: 13px;
-    color: #e74c3c;
+    color: #FF7B00  ;
     text-decoration: none;
   }
   
